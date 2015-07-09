@@ -1,0 +1,300 @@
+html {
+    background-color: #fefefe;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+i {
+    display: inline;
+}
+
+a, a:link, a:active, a:visited {
+    color: #388887;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #78bf9b;
+    }
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: .9em;
+}
+
+li {
+    list-style-type: none;
+}
+
+header img {
+    margin: 10px 0;
+}
+
+nav {
+    line-height: 1.6em;
+}
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        text-decoration: none;
+        font-weight: bold;
+        display: inline;
+        list-style-type: none;
+        text-align: center;
+        padding: 15px;
+    }
+
+footer {
+    font-size: .8em;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.divider {
+    height: 12px;
+    background: url("../images/mobile-dots.png") no-repeat center top;
+    background-size: contain;
+    margin: 15px 0;
+}
+
+.spacing {
+    margin: 30px 0px;
+}
+
+a.current {
+    color: #0b486c;
+}
+
+.box {
+    background-color: #f6f6f6;
+    border: 2px solid #f8f8f8;
+    padding-bottom: 15px;
+}
+
+    .box p, .box h1, .box h2 {
+        padding: 15px;
+    }
+
+    .box h3 {
+        padding: 0 15px;
+    }
+
+    .box h1 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .box img {
+        margin: 0 auto;
+        max-width: 96%;
+    }
+
+    .box .title, .box .subtitle {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+.contact a {
+    padding-left: 25px;
+}
+
+.contact strong {
+    font-size: 1.3em;
+}
+
+.bio img {
+    padding: 20px;
+}
+
+.resume ul {
+    padding: 20px;
+}
+
+.timeframe {
+    display: block;
+    font-style: italic;
+}
+/* MOBILE */
+
+@media only screen and (max-width: 500px) {
+    .box img {
+        margin: 0 auto;
+        float: none !important;
+    }
+
+    .box .title {
+        margin-top: 15px;
+    }
+}
+
+/* EVERYTHING BUT MOBILE */
+
+@media only screen and (min-width:500px) {
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        padding: 0 0 0 20px;
+    }
+
+    .box h1 {
+        text-align: left;
+    }
+
+    footer {
+        padding: 25px 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .copyright {
+        text-align: right;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    .divider {
+        background: url("../images/tablet-dots.png") no-repeat center top;
+        background-size: contain;
+    }
+
+    nav {
+        margin-top: 40px;
+    }
+}
+
+.box .title {
+    margin-top: 15px;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 900px) {
+    .divider {
+        background: url("../images/desktop-dots.png") no-repeat center top;
+        background-size: contain;
+        margin-bottom: 30px;
+    }
+
+    nav {
+        margin-top: 55px;
+    }
+
+    .timeframe {
+        float: right;
+    }
+}
+
+
+/* PRINT STYLES */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
