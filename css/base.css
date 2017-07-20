@@ -65,6 +65,11 @@ h3 {
     margin-bottom: .9em;
 }
 
+h4 {
+  font-size:.9 em;
+  margin: 0 0 .5em 0;
+}
+
 li {
     list-style-type: none;
 }
