@@ -110,6 +110,8 @@ footer {
     text-align: center;
 }
 
+.clear{clear:both;}
+
 .divider {
     height: 12px;
     background: url("../images/mobile-dots.png") no-repeat center top;
@@ -173,7 +175,7 @@ a.current {
 }
 
 .resume ul {
-  padding:20px;
+  padding:15px;
 }
 
 .experience ul {padding-top:0;}
